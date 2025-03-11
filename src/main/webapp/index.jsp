@@ -48,6 +48,7 @@
     <h1>Spring으로 향하는 길</h1>
     <button class="fancy-button" onclick="alert('아직 준비 중입니다.')">page01.jsp</button>
     <button class="fancy-button" onclick="location.href='page02.jsp'">page02.jsp</button>
+    <button class="fancy-button" onclick="location.href='private'">page03.jsp</button>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script>
