@@ -45,8 +45,8 @@
 </head>
 <body>
 <div id="container">
-    <h1>멋진 Three.js 페이지</h1>
-    <button class="fancy-button" onclick="location.href='page01.jsp'">page01.jsp</button>
+    <h1>Spring으로 향하는 길</h1>
+    <button class="fancy-button" onclick="alert('아직 준비 중입니다.')">page01.jsp</button>
     <button class="fancy-button" onclick="location.href='page02.jsp'">page02.jsp</button>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
