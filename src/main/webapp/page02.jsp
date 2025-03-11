@@ -54,6 +54,7 @@
             z-index: -1; /* 폼 뒤에 배치 */
             width: 100%;
             height: 100%;
+            background-color: #dddddd;
         }
 
         .container {

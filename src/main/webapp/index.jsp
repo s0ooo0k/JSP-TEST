@@ -1,14 +1,36 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Three.js 강화된 페이지</title>
+    <%
+        String title = "Spring으로 향하는 길";
+        String description = "Spring을 하기 전 실습이라네요 벌써 헷갈려~";
+        String imageUrl = "https://github.com/user-attachments/assets/44de7b45-ad10-4d6f-86a5-9e327b412c4b";
+    %>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="<%= title %>" />
+    <meta property="og:description" content="<%= description %>" />
+    <meta property="og:image" content="<%= imageUrl %>" />
+    <title>Spring으로 가자</title>
     <style>
+        @font-face {
+            font-family: 'GongGothicMedium';
+            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        * {
+            font-family: 'GongGothicMedium', normal;
+        }
+
         body {
             margin: 0;
             padding: 0;
             overflow: hidden;
-            font-family: 'Arial', sans-serif;
+            font-family: 'GongGothicMedium', normal;
         }
+
         #container {
             position: absolute;
             top: 50%;
@@ -46,9 +68,10 @@
 <body>
 <div id="container">
     <h1>Spring으로 향하는 길</h1>
-    <button class="fancy-button" onclick="alert('아직 준비 중입니다.')">page01.jsp</button>
-    <button class="fancy-button" onclick="location.href='page02.jsp'">page02.jsp</button>
-    <button class="fancy-button" onclick="location.href='private'">page03.jsp</button>
+    <button class="fancy-button" onclick="location.href='/WEB-INF/image.jsp'">image</button>
+    <button class="fancy-button" onclick="location.href='page02.jsp'">LLM+기본 실습</button>
+    <button class="fancy-button" onclick="location.href='private'">private JSP 실습</button>
+    <button class="fancy-button" onclick="location.href='auth'">auth 실습</button>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script>
