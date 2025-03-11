@@ -68,7 +68,7 @@
 <body>
 <div id="container">
     <h1>Spring으로 향하는 길</h1>
-    <button class="fancy-button" onclick="location.href='/WEB-INF/image.jsp'">image</button>
+    <button class="fancy-button" onclick="location.href='image/ogimg'">image</button>
     <button class="fancy-button" onclick="location.href='page02.jsp'">LLM+기본 실습</button>
     <button class="fancy-button" onclick="location.href='private'">private JSP 실습</button>
     <button class="fancy-button" onclick="location.href='auth'">auth 실습</button>

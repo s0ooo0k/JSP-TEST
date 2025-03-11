@@ -1,5 +1,4 @@
-package io.github.s0ooo0k.day361.controller;
-
+package org.example.ex11.controller;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -13,6 +12,8 @@ import java.io.IOException;
 public class ImageController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.getRequestDispatcher("WEB-INF/image.jsp").forward(req, resp);
+//        System.out.println(req.getPathInfo());
+        req.setAttribute("image", req.getPathInfo());
+        req.getRequestDispatcher("/WEB-INF/image.jsp").forward(req, resp);
     }
 }
